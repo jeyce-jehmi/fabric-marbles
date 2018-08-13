@@ -156,7 +156,7 @@ function installAndInstantiateCC {
 
 	CNT_PF_LOCAL="$BEZANT_HOME/marbles/config/connection_profile_local.json"
 	printTitle "Reflect your ENV to $CNT_PF_LOCAL file.."
-	sed -i "" 's/$HOME/Users\/jeyce\/bezantdev\/marbles/g' $CNT_PF_LOCAL
+	sed -i "" 's/\/$HOME/~\/bezantdev\/marbles/g' $CNT_PF_LOCAL
 
 	cd $BEZANT_HOME/marbles/scripts
 	npm install
